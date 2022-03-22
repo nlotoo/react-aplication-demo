@@ -3,10 +3,9 @@ const app = express
 
 
 const { PORT }= require("./config/config.js")
-
 router = require('./router')
 
-const expressConfig =require('./config/express.js')
+const expressConfig = require('./config/express.js')
 expressConfig(app)
 
 
