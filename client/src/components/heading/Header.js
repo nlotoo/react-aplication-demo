@@ -10,8 +10,10 @@ class Header extends Component {
     render() {
 
         return (
-         <div >
-             <ul className="navigation">
+         
+             <nav className="navigation" >
+             <ul >
+                 <li className="listItem"><img src="/white-origami-bird.png" alt="white-origami" height="105px"  /></li>
                  <li className="listItem" ><a href="">Going to 1</a></li>
                  <li className="listItem" ><a href="">Going to 2</a></li>
                  <li className="listItem" ><a href="">Going to 3</a></li>
@@ -22,8 +24,11 @@ class Header extends Component {
                  <li className="listItem" ><a href="">Going to 8</a></li>
                  <li className="listItem" ><a href="">Going to 9</a></li>
                  <li className="listItem" ><a href="">Going to 10</a></li>
+                 <li className="listItem" ><a href="">Going to 11</a></li>
+
              </ul>
-         </div>
+             </nav>
+       
         )
     }
 

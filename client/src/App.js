@@ -6,8 +6,8 @@ import Header from './components/heading/Header';
 
 function App() {
   return (
-    <div>
-      <h1>A</h1>
+    <div className='container'>
+     
       <Header></Header>
     </div>
 

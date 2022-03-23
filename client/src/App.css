@@ -1,4 +1,5 @@
 
+/*  new css configuration */
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 * {
@@ -11,6 +12,15 @@
   max-width: 100%;
   margin: 0 auto;
 }
+
+/* .container {
+  margin-top: 8.5%;
+  padding: 0.5%;
+  border: 1px solid purple;
+  margin-bottom: 0.1%;
+} */
+
+ /* ------------------ */
 
 .App-logo {
   height: 40vmin;

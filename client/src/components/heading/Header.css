@@ -1,6 +1,6 @@
 .navigation {
     width: 100%;
-    height: 14vh;
+    height: 16vh;
     background-color: #234465;
     color: white;
     position: fixed;
@@ -14,4 +14,31 @@
 nav .listItem a {
     color: white;
     text-decoration: none;
+}
+
+nav .listItem:hover {
+    border-top: none;
+    border-bottom: 2px solid #ffa000;
+    font-weight: bold;
+}
+
+nav .listItem:not(:first-child) {
+    padding: 2%;
+    margin-top: 1.5%;
+    border-top: 2px solid #ffa000;
+}
+
+
+nav .listItem, footer .listItem {
+    display: inline-block;
+    height: auto;
+    margin-right: 2%;
+    cursor: pointer;
+    padding: 0.5%;
+    margin: 0.1%;
+    vertical-align: top;
+}
+
+ul {
+    padding-left: 30px;
 }
