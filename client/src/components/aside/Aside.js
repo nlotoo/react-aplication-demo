@@ -18,7 +18,7 @@ class Aside extends Component {
         }
 
         return (
-            <aside class='aside-class container'>
+            <aside class='aside-class'>
                 <ul>
                     {AsideItemArray.map(asideRow => asideRow)}
                 </ul>
