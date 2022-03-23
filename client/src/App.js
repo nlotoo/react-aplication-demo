@@ -7,6 +7,7 @@ import Demo from './components/demo-folder/Demo.js'
 import Header from './components/heading/Header';
 import Aside from './components/aside/Aside.js';
 import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
 
       <Header></Header>
       <div className='container'>
-      <Aside></Aside>
-      <Main></Main>
+        <Aside></Aside>
+        <Main></Main>
       </div>
+      <Footer />
 
     </div>
 
