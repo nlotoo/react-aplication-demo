@@ -72,7 +72,7 @@ footer .listItem:hover {
     border-top: 2px solid #234465;
     font-weight: bold;
 }
-
+/* 
 aside .listItem {
     display: block;
     width: 98%;
@@ -99,7 +99,7 @@ aside .listItem:hover {
     border-top: 2px solid #234465;
     border-bottom: 2px solid #234465;
     color: #ffa000;
-}
+} */
 
 /* Link Styles */
 
