@@ -1,6 +1,5 @@
 import { Component } from 'react'
 
-import { environment } from '../../environments/environment.dev'
 import '../main/Main.css'
 import Post from './post/Post.js'
 
