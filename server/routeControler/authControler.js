@@ -7,7 +7,7 @@ const authService = require('../service/authService.js')
 
 
 
-router.get('/', async (req, res) => {
+router.get('/home', async (req, res) => {
 
     try {
 
@@ -17,6 +17,20 @@ router.get('/', async (req, res) => {
         console.log(err)
     }
 })
+
+
+
+router.get('/', async (req, res) => {
+    try {
+        let data = await authService.getAllPosts()
+        console.log(data)
+    }   
+    catch (err) {
+        console.log(err)
+
+    }
+})
+
 
 
 module.exports = router

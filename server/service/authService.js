@@ -1,4 +1,4 @@
-
+const Post = require("../schemes/Post")
 
 
 
@@ -9,6 +9,19 @@ function firstFunc() {
 
 }
 
+async function getAllPosts() {
+    let data = Post.find({})
+    return data
+}
+
+
+async function createPost(data) {
+    let result = new Post(data);
+    return result.save()
+}
+
 module.exports = {
-    firstFunc
+    firstFunc,
+    createPost,
+    getAllPosts
 }

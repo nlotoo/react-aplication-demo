@@ -7,6 +7,7 @@ class Post extends Component {
 
     }
 
+
     render() {
         return (
             <div className="main-posts-container">

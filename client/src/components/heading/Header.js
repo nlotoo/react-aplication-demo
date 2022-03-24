@@ -9,7 +9,7 @@ class Header extends Component {
 
         let NavigationItemArray = [];
         for (let i = 1; i < 12; i++) {
-            NavigationItemArray.push(<NavigationItem>Going to {i}</NavigationItem>)
+            NavigationItemArray.push(<NavigationItem key={+i} >Going to {i}</NavigationItem>)
         }
         return (
 

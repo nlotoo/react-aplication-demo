@@ -14,14 +14,18 @@ class Aside extends Component {
 
         let AsideItemArray = []
         for (let i = 1; i < 12; i++) {
-            AsideItemArray.push(<AsideItem><li className="aside-list-item "><a>Going to {i}</a> </li></AsideItem>)
+            AsideItemArray.push(<AsideItem key={i}>Going to {i}</AsideItem>)
         }
 
         return (
-            <aside class='aside-class'>
-                <ul>
-                    {AsideItemArray.map(asideRow => asideRow)}
-                </ul>
+
+            <aside className='aside-class'>
+  
+
+                    <ul>
+                        {AsideItemArray.map(asideRow => asideRow)}
+                    </ul>
+            
             </aside>
         )
     }

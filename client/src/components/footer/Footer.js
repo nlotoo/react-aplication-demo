@@ -28,7 +28,6 @@ class Footer extends Component {
                      <img src="blue-origami-bird-flipped.png" alt='Origami bird' width='100px'></img> 
                  </ul>
                 <p>Yordan Nikolov &copy;</p>
-
             </footer>
         )
 

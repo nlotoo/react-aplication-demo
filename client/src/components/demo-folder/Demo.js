@@ -5,11 +5,9 @@ function Demo() {
 
 
 
-    fetch(`${environment.apiUrl}`)
-        .then(response => response.json())
-        .then((data) => data)
 
 
+    console.log()
 
 
     return (
