@@ -6,28 +6,13 @@ const authService = require('../service/authService.js')
 
 
 
-
-router.get('/home', async (req, res) => {
-
-    try {
-
-        authService.firstFunc()
-
-    } catch (err) {
-        console.log(err)
-    }
-})
-
-
-
 router.get('/', async (req, res) => {
     try {
         let data = await authService.getAllPosts()
-        console.log(data)
+       res.status(200).json(data);
     }   
     catch (err) {
-        console.log(err)
-
+        res.status(401).json({ message: err })
     }
 })
 
