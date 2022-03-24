@@ -15,7 +15,7 @@ class Main extends Component {
             <main className='main' >
                 <h1>Posts</h1>
                 {this.props.data.map((rowWithPost, i) => {
-                    return <Post key={i} post={rowWithPost}></Post>
+                    return <Post key={rowWithPost._id} post={rowWithPost}></Post>
                 })
                 }
 
