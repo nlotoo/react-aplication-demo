@@ -11,21 +11,13 @@ class Main extends Component {
     render() {
 
 
-
-
-
         return (
             <main className='main' >
                 <h1>Posts</h1>
-            
-
-
-
-
-                {/* {this.props.data.map((rowWithPost, i) => {
+                {this.props.data.map((rowWithPost, i) => {
                     return <Post key={rowWithPost._id} post={rowWithPost}></Post>
                 })
-                } */}
+                }
 
             </main >
         )

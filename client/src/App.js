@@ -17,72 +17,64 @@ import About from './components/About/about';
 import { Component } from 'react';
 
 
-import { Route, Link, Switch } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-
-
-function App() {
-
-  let data;
-
-  data = getAll()
-
-
-  return (
-    <div>
-      <Header></Header>
-      <div className='container'>
-        <Aside></Aside>
-        <Main data={data}></Main>
-      </div>
-      <Footer />
-
-    </div>
-
-  );
-}
-
-
-// class App extends Component {
-//   constructor(props) {
-//     super(props)
-
-
-//     this.state = { posts: [] }
-//   }
-
-//   componentDidMount() {
-//     getAll().then((posts) => {
-//       return this.setState({ posts })
-//     })
-//   }
-
-
-//   render() {
-
-
-//     return (
-//       <div>
-//         <Header></Header>
-//         <div className='container'>
-//           <Aside></Aside>
-//           <Main data={this.state.posts}></Main>
+import { Route, Link, Switch } from 'react-router-dom';
 
 
 
+// function App() {
 
-
-
-//         </div>
-//         <Footer />
-
+//   return (
+//     <div>
+//       <Header></Header>
+//       <div className='container'>
+//         <Aside></Aside>
+//         <Main></Main>
 //       </div>
+//       <Footer />
 
-//     );
-//   }
+//     </div>
 
-
-
+//   );
 // }
+
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+
+
+    this.state = { posts: [] }
+  }
+
+  componentDidMount() {
+    getAll().then((posts) => {
+      return this.setState({ posts })
+    })
+  }
+
+
+  render() {
+
+
+    return (
+      <div>
+        <Header />
+      
+        <div className='container'>
+
+          <Aside />
+          <Main data={this.state.posts} />
+        </div>
+        <Footer />
+
+      </div>
+
+    );
+  }
+
+
+
+}
 
 export default App;
